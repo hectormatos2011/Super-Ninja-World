@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1BC67C1CA9A9C600FFD451 /* EmptyGameNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */; };
 		5D4AB80F1C99D329009D25D0 /* Enemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D4AB80E1C99D329009D25D0 /* Enemy.sks */; };
 		5D4AE8A01CA05C9900654EDE /* SpriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AE89F1CA05C9900654EDE /* SpriteType.swift */; };
 		5D7802BA1C89737F006913E5 /* MoveRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802B91C89737F006913E5 /* MoveRight.sks */; };
 		5D7802BC1C89740D006913E5 /* StationaryRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802BB1C89740D006913E5 /* StationaryRight.sks */; };
 		5D7802BE1C89741A006913E5 /* StationaryLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802BD1C89741A006913E5 /* StationaryLeft.sks */; };
-		5D8D2A4A1CA7950400CD8432 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A451CA7950400CD8432 /* Block.swift */; };
 		5D8D2A4B1CA7950400CD8432 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A461CA7950400CD8432 /* Enemy.swift */; };
-		5D8D2A4C1CA7950400CD8432 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A471CA7950400CD8432 /* Ground.swift */; };
-		5D8D2A4D1CA7950400CD8432 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A481CA7950400CD8432 /* Pipe.swift */; };
 		5D8D2A4E1CA7950400CD8432 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A491CA7950400CD8432 /* Player.swift */; };
 		5D93B6F31C826663009D7992 /* WarpPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D93B6F21C826663009D7992 /* WarpPipe.sks */; };
 		5D943E571CA7E72B0098FE41 /* JumpRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D943E561CA7E72B0098FE41 /* JumpRight.sks */; };
@@ -35,15 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyGameNodes.swift; sourceTree = "<group>"; };
 		5D4AB80E1C99D329009D25D0 /* Enemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Enemy.sks; sourceTree = "<group>"; };
 		5D4AE89F1CA05C9900654EDE /* SpriteType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteType.swift; sourceTree = "<group>"; };
 		5D7802B91C89737F006913E5 /* MoveRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoveRight.sks; sourceTree = "<group>"; };
 		5D7802BB1C89740D006913E5 /* StationaryRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryRight.sks; sourceTree = "<group>"; };
 		5D7802BD1C89741A006913E5 /* StationaryLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryLeft.sks; sourceTree = "<group>"; };
-		5D8D2A451CA7950400CD8432 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		5D8D2A461CA7950400CD8432 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		5D8D2A471CA7950400CD8432 /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
-		5D8D2A481CA7950400CD8432 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		5D8D2A491CA7950400CD8432 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		5D93B6F21C826663009D7992 /* WarpPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WarpPipe.sks; sourceTree = "<group>"; };
 		5D943E561CA7E72B0098FE41 /* JumpRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpRight.sks; sourceTree = "<group>"; };
@@ -80,9 +76,7 @@
 			children = (
 				5D8D2A491CA7950400CD8432 /* Player.swift */,
 				5D8D2A461CA7950400CD8432 /* Enemy.swift */,
-				5D8D2A451CA7950400CD8432 /* Block.swift */,
-				5D8D2A471CA7950400CD8432 /* Ground.swift */,
-				5D8D2A481CA7950400CD8432 /* Pipe.swift */,
+				5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -227,10 +221,8 @@
 			files = (
 				5D4AE8A01CA05C9900654EDE /* SpriteType.swift in Sources */,
 				5DC82B811C821609003744F9 /* GameScene.swift in Sources */,
-				5D8D2A4C1CA7950400CD8432 /* Ground.swift in Sources */,
-				5D8D2A4D1CA7950400CD8432 /* Pipe.swift in Sources */,
 				5D8D2A4B1CA7950400CD8432 /* Enemy.swift in Sources */,
-				5D8D2A4A1CA7950400CD8432 /* Block.swift in Sources */,
+				5D1BC67C1CA9A9C600FFD451 /* EmptyGameNodes.swift in Sources */,
 				5DC82B831C821609003744F9 /* GameViewController.swift in Sources */,
 				5D8D2A4E1CA7950400CD8432 /* Player.swift in Sources */,
 				5DC82B7D1C821609003744F9 /* AppDelegate.swift in Sources */,
