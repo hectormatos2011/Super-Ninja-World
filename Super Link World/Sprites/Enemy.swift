@@ -14,7 +14,7 @@ enum EnemyType {
 }
 
 class Enemy: SKSpriteNode {
-    var multiplier: CGFloat = 1.0
+    var multiplier: CGFloat = -1.0
     func updateEnemy(currentTime: CFTimeInterval) {
         position.x += 2.0 * multiplier
     }
@@ -24,6 +24,10 @@ extension Enemy: GameNode {
     func collidedWith(node: GameNode) {
         if node.type != .Player {
             multiplier *= -1.0
+            
+            let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(-30.0 * Float(multiplier))), duration: 0.1))
+            removeAllActions()
+            runAction(rotateAction)
         }
     }
 }

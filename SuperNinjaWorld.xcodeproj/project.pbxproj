@@ -50,7 +50,7 @@
 		5D943E581CA7E7710098FE41 /* JumpLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpLeft.sks; sourceTree = "<group>"; };
 		5DBF71571C82749D00424548 /* EnemyPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyPipe.sks; sourceTree = "<group>"; };
 		5DBF71591C8281A200424548 /* PirahnaPlant.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PirahnaPlant.sks; sourceTree = "<group>"; };
-		5DC82B791C821609003744F9 /* Super Link World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Link World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC82B791C821609003744F9 /* SuperNinjaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperNinjaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC82B7C1C821609003744F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC82B801C821609003744F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5DC82B821C821609003744F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		5DC82B701C821609003744F9 = {
 			isa = PBXGroup;
 			children = (
-				5DC82B7B1C821609003744F9 /* Super Link World */,
+				5DC82B7B1C821609003744F9 /* SuperNinjaWorld */,
 				5DC82B7A1C821609003744F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,12 +98,12 @@
 		5DC82B7A1C821609003744F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DC82B791C821609003744F9 /* Super Link World.app */,
+				5DC82B791C821609003744F9 /* SuperNinjaWorld.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5DC82B7B1C821609003744F9 /* Super Link World */ = {
+		5DC82B7B1C821609003744F9 /* SuperNinjaWorld */ = {
 			isa = PBXGroup;
 			children = (
 				5DC82B7C1C821609003744F9 /* AppDelegate.swift */,
@@ -117,6 +117,7 @@
 				5DC82B891C821609003744F9 /* LaunchScreen.storyboard */,
 				5DC82B8C1C821609003744F9 /* Info.plist */,
 			);
+			name = SuperNinjaWorld;
 			path = "Super Link World";
 			sourceTree = "<group>";
 		};
@@ -143,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DC82B781C821609003744F9 /* Super Link World */ = {
+		5DC82B781C821609003744F9 /* SuperNinjaWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "Super Link World" */;
+			buildConfigurationList = 5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */;
 			buildPhases = (
 				5DC82B751C821609003744F9 /* Sources */,
 				5DC82B761C821609003744F9 /* Frameworks */,
@@ -155,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = "Super Link World";
+			name = SuperNinjaWorld;
 			productName = "Super Link World";
-			productReference = 5DC82B791C821609003744F9 /* Super Link World.app */;
+			productReference = 5DC82B791C821609003744F9 /* SuperNinjaWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5DC82B741C821609003744F9 /* Build configuration list for PBXProject "Super Link World" */;
+			buildConfigurationList = 5DC82B741C821609003744F9 /* Build configuration list for PBXProject "SuperNinjaWorld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DC82B781C821609003744F9 /* Super Link World */,
+				5DC82B781C821609003744F9 /* SuperNinjaWorld */,
 			);
 		};
 /* End PBXProject section */
@@ -347,8 +348,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Super Link World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KrakenDev.Super-Link-World";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrakenDev.SuperNinjaWorld;
+				PRODUCT_NAME = SuperNinjaWorld;
 			};
 			name = Debug;
 		};
@@ -358,15 +359,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Super Link World/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KrakenDev.Super-Link-World";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KrakenDev.SuperNinjaWorld;
+				PRODUCT_NAME = SuperNinjaWorld;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DC82B741C821609003744F9 /* Build configuration list for PBXProject "Super Link World" */ = {
+		5DC82B741C821609003744F9 /* Build configuration list for PBXProject "SuperNinjaWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC82B8D1C821609003744F9 /* Debug */,
@@ -375,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "Super Link World" */ = {
+		5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DC82B901C821609003744F9 /* Debug */,
