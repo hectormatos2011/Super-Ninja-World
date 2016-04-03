@@ -147,21 +147,6 @@ extension GameScene {
     }
 }
 
-// MARK: Key Commands!
-extension GameScene {
-    func moveLeft() {
-        player.moveLeft()
-    }
-    
-    func moveRight() {
-        player.moveRight()
-    }
-    
-    func jump() {
-        player.jump()
-    }
-}
-
 // MARK: Sprite Loading Functions
 extension GameScene {
     func childSprite<T>(type: T.Type) -> T! {
