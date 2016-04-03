@@ -12,7 +12,7 @@ class DeathScene: SKScene {
     override func didMoveToView(view: SKView) {
         super.didMoveToView(view)
         
-        let labelNode = childNodeWithName("GameOverLabel") as? SKLabelNode
+        let labelNode = childNodeWithName(Constants.Scene.deathSceneLabel) as? SKLabelNode
         labelNode?.position = CGPoint(x: view.bounds.width / 2.0, y: view.bounds.height / 2.0)
     }
 }

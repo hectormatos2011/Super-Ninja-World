@@ -26,14 +26,14 @@ extension Spike: GameNode {
     }
     
     func update(currentTime: CFTimeInterval) {
-        position.x += 2.0 * multiplier
+        position.x += Constants.Enemy.xPositionIncrement * multiplier
     }
     
     func collidedWith(node: GameNode) {
         if node.categorySetType != .Player {
             multiplier *= -1.0
             
-            let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(-30.0 * Float(multiplier))), duration: 0.1))
+            let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(Constants.Enemy.spikeRotationAngle * Float(multiplier))), duration: 0.1))
             removeAllActions()
             runAction(rotateAction)
         }

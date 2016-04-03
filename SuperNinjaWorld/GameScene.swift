@@ -35,7 +35,7 @@ class GameScene: SKScene {
         //This function is called when the scene is dismissed.
         let scene = GameScene(fileNamed: String(GameScene))!
         scene.scaleMode = .ResizeFill
-        view.presentScene(scene, transition: SKTransition.crossFadeWithDuration(3.0))
+        view.presentScene(scene, transition: SKTransition.crossFadeWithDuration(Constants.Scene.deathSceneTransitionDuration))
     }
     
     override func update(currentTime: CFTimeInterval) {
@@ -58,9 +58,9 @@ extension GameScene {
         rightButton.size = buttonSize
         aButton.size = buttonSize
 
-        leftButton.zPosition = 1000.0
-        rightButton.zPosition = 1000.0
-        aButton.zPosition = 1000.0
+        leftButton.zPosition = Constants.Scene.Button.zPosition
+        rightButton.zPosition = Constants.Scene.Button.zPosition
+        aButton.zPosition = Constants.Scene.Button.zPosition
         
         leftButton.texture = SKTexture(imageNamed: Constants.Scene.Button.leftImageFileName)
         rightButton.texture = SKTexture(imageNamed: Constants.Scene.Button.rightImageFileName)
@@ -86,7 +86,7 @@ extension GameScene: GameNode {
 // MARK: DeathDelegate Protocol Functions
 extension GameScene: DeathDelegate {
     func andThatsAllSheWrote() {
-        let transition = SKTransition.crossFadeWithDuration(2.0)
+        let transition = SKTransition.crossFadeWithDuration(Constants.Scene.deathSceneTransitionDuration)
         let scene = DeathScene(fileNamed: String(DeathScene))!
         scene.scaleMode = .ResizeFill
         view?.presentScene(scene, transition: transition)
