@@ -29,11 +29,9 @@
 		5D37A4641CAE216500145CC5 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4611CAE216500145CC5 /* Block.swift */; };
 		5D37A4651CAE216500145CC5 /* Spike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4621CAE216500145CC5 /* Spike.swift */; };
 		5D37A4661CAE216500145CC5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4631CAE216500145CC5 /* Player.swift */; };
-		5D37A4691CAE225200145CC5 /* OptionSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4681CAE225200145CC5 /* OptionSetType.swift */; };
 		5D535CA61CB09512002636BB /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA51CB09512002636BB /* Ground.swift */; };
 		5D535CA81CB09537002636BB /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA71CB09537002636BB /* Pipe.swift */; };
 		5D535CAA1CB0969A002636BB /* GameNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA91CB0969A002636BB /* GameNode.swift */; };
-		5D535CAC1CB096C7002636BB /* OptionSetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */; };
 		5D535CAF1CB0A7CA002636BB /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CAE1CB0A7CA002636BB /* Plant.swift */; };
 		5D535CB11CB0A9C5002636BB /* MagicNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */; };
 		5D535CB61CB0BA53002636BB /* DeathScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D535CB51CB0BA53002636BB /* DeathScene.sks */; };
@@ -65,11 +63,9 @@
 		5D37A4611CAE216500145CC5 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		5D37A4621CAE216500145CC5 /* Spike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spike.swift; sourceTree = "<group>"; };
 		5D37A4631CAE216500145CC5 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		5D37A4681CAE225200145CC5 /* OptionSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSetType.swift; sourceTree = "<group>"; };
 		5D535CA51CB09512002636BB /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 		5D535CA71CB09537002636BB /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		5D535CA91CB0969A002636BB /* GameNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameNode.swift; sourceTree = "<group>"; };
-		5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionSetType+Extension.swift"; sourceTree = "<group>"; };
 		5D535CAE1CB0A7CA002636BB /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicNumbers.swift; sourceTree = "<group>"; };
 		5D535CB51CB0BA53002636BB /* DeathScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DeathScene.sks; sourceTree = "<group>"; };
@@ -112,7 +108,6 @@
 				5D37A4351CAE20B500145CC5 /* GameViewController.swift */,
 				5D535CA91CB0969A002636BB /* GameNode.swift */,
 				5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */,
-				5D535CAD1CB09784002636BB /* OptionSetType */,
 				5D37A4601CAE216500145CC5 /* Sprites */,
 				5D37A4671CAE219A00145CC5 /* Storyboards */,
 				5D37A4451CAE215E00145CC5 /* Scenes */,
@@ -163,15 +158,6 @@
 				5D37A43C1CAE20B500145CC5 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		5D535CAD1CB09784002636BB /* OptionSetType */ = {
-			isa = PBXGroup;
-			children = (
-				5D37A4681CAE225200145CC5 /* OptionSetType.swift */,
-				5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */,
-			);
-			name = OptionSetType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +254,8 @@
 				5D37A4661CAE216500145CC5 /* Player.swift in Sources */,
 				5D37A4301CAE20B500145CC5 /* AppDelegate.swift in Sources */,
 				5D535CA81CB09537002636BB /* Pipe.swift in Sources */,
-				5D535CAC1CB096C7002636BB /* OptionSetType+Extension.swift in Sources */,
 				5D535CA61CB09512002636BB /* Ground.swift in Sources */,
 				5D535CB11CB0A9C5002636BB /* MagicNumbers.swift in Sources */,
-				5D37A4691CAE225200145CC5 /* OptionSetType.swift in Sources */,
 				5D535CB81CB0BB6A002636BB /* DeathScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

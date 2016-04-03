@@ -26,7 +26,6 @@ class GameScene: SKScene {
         
         setUpPhysics(view)
         setUpButtons(view)
-        setUpBitMasks()
     }
     
     override func willMoveFromView(view: SKView) {
@@ -73,13 +72,6 @@ extension GameScene {
         addChild(leftButton)
         addChild(rightButton)
         addChild(aButton)
-    }
-}
-
-// MARK: GameNode Protocol Functions
-extension GameScene: GameNode {
-    func setUpBitMasks() {
-        categorySetType = .Scene
     }
 }
 

@@ -13,29 +13,12 @@ class Spike: SKSpriteNode {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setUpBitMasks()
     }
 }
 
 //MARK: GameNode Protocol Functions
 extension Spike: GameNode {
-    func setUpBitMasks() {
-        categorySetType = .Spike
-        contactTestSetType = [.Pipe, .Scene]
-        collisionSetType = .Ground
-    }
-    
     func update(currentTime: CFTimeInterval) {
         position.x += Constants.Enemy.xPositionIncrement * multiplier
-    }
-    
-    func collidedWith(node: GameNode) {
-        if node.categorySetType != .Player {
-            multiplier *= -1.0
-            
-            let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(Constants.Enemy.spikeRotationAngle * Float(multiplier))), duration: 0.1))
-            removeAllActions()
-            runAction(rotateAction)
-        }
     }
 }

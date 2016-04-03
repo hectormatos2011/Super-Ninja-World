@@ -11,13 +11,5 @@ import SpriteKit
 class Block: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setUpBitMasks()
-    }
-}
-
-//MARK: GameNode Protocol Functions
-extension Block: GameNode {
-    func setUpBitMasks() {
-        categorySetType = .Block
     }
 }
