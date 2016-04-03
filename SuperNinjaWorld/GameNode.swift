@@ -9,7 +9,7 @@
 import SpriteKit
 
 protocol GameNode: class {
-    var node: SKNode? { get }
+    var node: SKNode { get }
     var categorySetType: SpriteType { get set }
     var contactTestSetType: SpriteType { get set }
     var collisionSetType: SpriteType { get set }
@@ -20,7 +20,7 @@ protocol GameNode: class {
 }
 
 extension GameNode where Self: SKNode {
-    var node: SKNode? { return self }
+    var node: SKNode { return self }
     
     var categorySetType: SpriteType {
         get { return SpriteType(rawValue: physicsBody?.categoryBitMask ?? SpriteType.None.rawValue) }

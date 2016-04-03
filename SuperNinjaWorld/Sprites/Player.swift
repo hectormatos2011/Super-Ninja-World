@@ -102,7 +102,7 @@ extension Player {
         removeAllActions()
         runAction(actions[newAction]!)
         
-        action.remove([.Move, .Jump])
+        action.remove([.Move])
         action.insert(newAction)
     }
 }
@@ -139,6 +139,8 @@ extension Player: GameNode {
     }
     
     func collidedWith(node: GameNode) {
+        guard let sprite = node.node as? SKSpriteNode else { return }
+        
         if (node.categorySetType == .Spike || node.categorySetType == .Plant) && action != .Dying {
             action = .Dying
             collisionSetType = .None
@@ -146,15 +148,9 @@ extension Player: GameNode {
             
             delegate?.andThatsAllSheWrote()
         } else if action.contains(.Jump) {
-            if action.contains(.FaceLeft) {
-                action.remove(.FaceLeft)
-                moveLeft()
-            } else {
-                action.remove(.FaceRight)
-                moveRight()
+            if frame.maxY > sprite.position.y {
+                action.remove(.Jump)
             }
-            
-            action.remove(.Jump)
         }
     }
 }
