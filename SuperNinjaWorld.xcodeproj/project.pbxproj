@@ -7,61 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D1BC67C1CA9A9C600FFD451 /* EmptyGameNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */; };
-		5D4AB80F1C99D329009D25D0 /* Enemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D4AB80E1C99D329009D25D0 /* Enemy.sks */; };
-		5D4AE8A01CA05C9900654EDE /* SpriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AE89F1CA05C9900654EDE /* SpriteType.swift */; };
-		5D7802BA1C89737F006913E5 /* MoveRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802B91C89737F006913E5 /* MoveRight.sks */; };
-		5D7802BC1C89740D006913E5 /* StationaryRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802BB1C89740D006913E5 /* StationaryRight.sks */; };
-		5D7802BE1C89741A006913E5 /* StationaryLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D7802BD1C89741A006913E5 /* StationaryLeft.sks */; };
-		5D8D2A4B1CA7950400CD8432 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A461CA7950400CD8432 /* Enemy.swift */; };
-		5D8D2A4E1CA7950400CD8432 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D2A491CA7950400CD8432 /* Player.swift */; };
-		5D93B6F31C826663009D7992 /* WarpPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D93B6F21C826663009D7992 /* WarpPipe.sks */; };
-		5D943E571CA7E72B0098FE41 /* JumpRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D943E561CA7E72B0098FE41 /* JumpRight.sks */; };
-		5D943E591CA7E7710098FE41 /* JumpLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D943E581CA7E7710098FE41 /* JumpLeft.sks */; };
-		5DBF71581C82749D00424548 /* EnemyPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DBF71571C82749D00424548 /* EnemyPipe.sks */; };
-		5DBF715A1C8281A200424548 /* PirahnaPlant.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DBF71591C8281A200424548 /* PirahnaPlant.sks */; };
-		5DC82B7D1C821609003744F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC82B7C1C821609003744F9 /* AppDelegate.swift */; };
-		5DC82B811C821609003744F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC82B801C821609003744F9 /* GameScene.swift */; };
-		5DC82B831C821609003744F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC82B821C821609003744F9 /* GameViewController.swift */; };
-		5DC82B861C821609003744F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC82B841C821609003744F9 /* Main.storyboard */; };
-		5DC82B881C821609003744F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC82B871C821609003744F9 /* Assets.xcassets */; };
-		5DC82B8B1C821609003744F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC82B891C821609003744F9 /* LaunchScreen.storyboard */; };
-		5DCA51E01C87EC1E0036549B /* MoveLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DCA51DF1C87EC1E0036549B /* MoveLeft.sks */; };
-		5DD11BEC1C8229FD00F7D5D0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DD11BEB1C8229FD00F7D5D0 /* GameScene.sks */; };
-		5DD11BEF1C822EFD00F7D5D0 /* Ground.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DD11BEE1C822EFD00F7D5D0 /* Ground.sks */; };
-		5DD92D521C86BCE70054C35A /* Player.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DD92D511C86BCE70054C35A /* Player.sks */; };
+		5D37A4301CAE20B500145CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A42F1CAE20B500145CC5 /* AppDelegate.swift */; };
+		5D37A4341CAE20B500145CC5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4331CAE20B500145CC5 /* GameScene.swift */; };
+		5D37A4361CAE20B500145CC5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4351CAE20B500145CC5 /* GameViewController.swift */; };
+		5D37A4391CAE20B500145CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4371CAE20B500145CC5 /* Main.storyboard */; };
+		5D37A43B1CAE20B500145CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A43A1CAE20B500145CC5 /* Assets.xcassets */; };
+		5D37A43E1CAE20B500145CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A43C1CAE20B500145CC5 /* LaunchScreen.storyboard */; };
+		5D37A4531CAE215E00145CC5 /* Enemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4461CAE215E00145CC5 /* Enemy.sks */; };
+		5D37A4541CAE215E00145CC5 /* EnemyPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4471CAE215E00145CC5 /* EnemyPipe.sks */; };
+		5D37A4551CAE215E00145CC5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4481CAE215E00145CC5 /* GameScene.sks */; };
+		5D37A4561CAE215E00145CC5 /* Ground.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4491CAE215E00145CC5 /* Ground.sks */; };
+		5D37A4571CAE215E00145CC5 /* JumpLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44A1CAE215E00145CC5 /* JumpLeft.sks */; };
+		5D37A4581CAE215E00145CC5 /* JumpRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44B1CAE215E00145CC5 /* JumpRight.sks */; };
+		5D37A4591CAE215E00145CC5 /* MoveLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44C1CAE215E00145CC5 /* MoveLeft.sks */; };
+		5D37A45A1CAE215E00145CC5 /* MoveRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44D1CAE215E00145CC5 /* MoveRight.sks */; };
+		5D37A45B1CAE215E00145CC5 /* Plant.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44E1CAE215E00145CC5 /* Plant.sks */; };
+		5D37A45C1CAE215E00145CC5 /* Player.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A44F1CAE215E00145CC5 /* Player.sks */; };
+		5D37A45D1CAE215E00145CC5 /* StationaryLeft.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4501CAE215E00145CC5 /* StationaryLeft.sks */; };
+		5D37A45E1CAE215E00145CC5 /* StationaryRight.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4511CAE215E00145CC5 /* StationaryRight.sks */; };
+		5D37A45F1CAE215E00145CC5 /* WarpPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4521CAE215E00145CC5 /* WarpPipe.sks */; };
+		5D37A4641CAE216500145CC5 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4611CAE216500145CC5 /* Block.swift */; };
+		5D37A4651CAE216500145CC5 /* Spike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4621CAE216500145CC5 /* Spike.swift */; };
+		5D37A4661CAE216500145CC5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4631CAE216500145CC5 /* Player.swift */; };
+		5D37A4691CAE225200145CC5 /* OptionSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A4681CAE225200145CC5 /* OptionSetType.swift */; };
+		5D535CA61CB09512002636BB /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA51CB09512002636BB /* Ground.swift */; };
+		5D535CA81CB09537002636BB /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA71CB09537002636BB /* Pipe.swift */; };
+		5D535CAA1CB0969A002636BB /* GameNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CA91CB0969A002636BB /* GameNode.swift */; };
+		5D535CAC1CB096C7002636BB /* OptionSetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */; };
+		5D535CAF1CB0A7CA002636BB /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CAE1CB0A7CA002636BB /* Plant.swift */; };
+		5D535CB11CB0A9C5002636BB /* MagicNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */; };
+		5D535CB61CB0BA53002636BB /* DeathScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D535CB51CB0BA53002636BB /* DeathScene.sks */; };
+		5D535CB81CB0BB6A002636BB /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D535CB71CB0BB6A002636BB /* DeathScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyGameNodes.swift; sourceTree = "<group>"; };
-		5D4AB80E1C99D329009D25D0 /* Enemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Enemy.sks; sourceTree = "<group>"; };
-		5D4AE89F1CA05C9900654EDE /* SpriteType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteType.swift; sourceTree = "<group>"; };
-		5D7802B91C89737F006913E5 /* MoveRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoveRight.sks; sourceTree = "<group>"; };
-		5D7802BB1C89740D006913E5 /* StationaryRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryRight.sks; sourceTree = "<group>"; };
-		5D7802BD1C89741A006913E5 /* StationaryLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryLeft.sks; sourceTree = "<group>"; };
-		5D8D2A461CA7950400CD8432 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
-		5D8D2A491CA7950400CD8432 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		5D93B6F21C826663009D7992 /* WarpPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WarpPipe.sks; sourceTree = "<group>"; };
-		5D943E561CA7E72B0098FE41 /* JumpRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpRight.sks; sourceTree = "<group>"; };
-		5D943E581CA7E7710098FE41 /* JumpLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpLeft.sks; sourceTree = "<group>"; };
-		5DBF71571C82749D00424548 /* EnemyPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyPipe.sks; sourceTree = "<group>"; };
-		5DBF71591C8281A200424548 /* PirahnaPlant.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PirahnaPlant.sks; sourceTree = "<group>"; };
-		5DC82B791C821609003744F9 /* SuperNinjaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperNinjaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DC82B7C1C821609003744F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DC82B801C821609003744F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		5DC82B821C821609003744F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		5DC82B851C821609003744F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5DC82B871C821609003744F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5DC82B8A1C821609003744F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5DC82B8C1C821609003744F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DCA51DF1C87EC1E0036549B /* MoveLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoveLeft.sks; sourceTree = "<group>"; };
-		5DD11BEB1C8229FD00F7D5D0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5DD11BEE1C822EFD00F7D5D0 /* Ground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ground.sks; sourceTree = "<group>"; };
-		5DD92D511C86BCE70054C35A /* Player.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Player.sks; sourceTree = "<group>"; };
+		5D37A42C1CAE20B500145CC5 /* SuperNinjaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperNinjaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D37A42F1CAE20B500145CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D37A4331CAE20B500145CC5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5D37A4351CAE20B500145CC5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5D37A4381CAE20B500145CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D37A43A1CAE20B500145CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D37A43D1CAE20B500145CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D37A43F1CAE20B500145CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D37A4461CAE215E00145CC5 /* Enemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Enemy.sks; sourceTree = "<group>"; };
+		5D37A4471CAE215E00145CC5 /* EnemyPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyPipe.sks; sourceTree = "<group>"; };
+		5D37A4481CAE215E00145CC5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5D37A4491CAE215E00145CC5 /* Ground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ground.sks; sourceTree = "<group>"; };
+		5D37A44A1CAE215E00145CC5 /* JumpLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpLeft.sks; sourceTree = "<group>"; };
+		5D37A44B1CAE215E00145CC5 /* JumpRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = JumpRight.sks; sourceTree = "<group>"; };
+		5D37A44C1CAE215E00145CC5 /* MoveLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoveLeft.sks; sourceTree = "<group>"; };
+		5D37A44D1CAE215E00145CC5 /* MoveRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoveRight.sks; sourceTree = "<group>"; };
+		5D37A44E1CAE215E00145CC5 /* Plant.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Plant.sks; sourceTree = "<group>"; };
+		5D37A44F1CAE215E00145CC5 /* Player.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Player.sks; sourceTree = "<group>"; };
+		5D37A4501CAE215E00145CC5 /* StationaryLeft.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryLeft.sks; sourceTree = "<group>"; };
+		5D37A4511CAE215E00145CC5 /* StationaryRight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StationaryRight.sks; sourceTree = "<group>"; };
+		5D37A4521CAE215E00145CC5 /* WarpPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WarpPipe.sks; sourceTree = "<group>"; };
+		5D37A4611CAE216500145CC5 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		5D37A4621CAE216500145CC5 /* Spike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spike.swift; sourceTree = "<group>"; };
+		5D37A4631CAE216500145CC5 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5D37A4681CAE225200145CC5 /* OptionSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSetType.swift; sourceTree = "<group>"; };
+		5D535CA51CB09512002636BB /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		5D535CA71CB09537002636BB /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		5D535CA91CB0969A002636BB /* GameNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameNode.swift; sourceTree = "<group>"; };
+		5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OptionSetType+Extension.swift"; sourceTree = "<group>"; };
+		5D535CAE1CB0A7CA002636BB /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicNumbers.swift; sourceTree = "<group>"; };
+		5D535CB51CB0BA53002636BB /* DeathScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DeathScene.sks; sourceTree = "<group>"; };
+		5D535CB71CB0BB6A002636BB /* DeathScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5DC82B761C821609003744F9 /* Frameworks */ = {
+		5D37A4291CAE20B500145CC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,106 +87,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D8D2A441CA794B100CD8432 /* Sprites */ = {
+		5D37A4231CAE20B500145CC5 = {
 			isa = PBXGroup;
 			children = (
-				5D8D2A491CA7950400CD8432 /* Player.swift */,
-				5D8D2A461CA7950400CD8432 /* Enemy.swift */,
-				5D1BC67B1CA9A9C600FFD451 /* EmptyGameNodes.swift */,
-			);
-			path = Sprites;
-			sourceTree = "<group>";
-		};
-		5DC82B701C821609003744F9 = {
-			isa = PBXGroup;
-			children = (
-				5DC82B7B1C821609003744F9 /* SuperNinjaWorld */,
-				5DC82B7A1C821609003744F9 /* Products */,
+				5D37A42E1CAE20B500145CC5 /* SuperNinjaWorld */,
+				5D37A42D1CAE20B500145CC5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5DC82B7A1C821609003744F9 /* Products */ = {
+		5D37A42D1CAE20B500145CC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DC82B791C821609003744F9 /* SuperNinjaWorld.app */,
+				5D37A42C1CAE20B500145CC5 /* SuperNinjaWorld.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5DC82B7B1C821609003744F9 /* SuperNinjaWorld */ = {
+		5D37A42E1CAE20B500145CC5 /* SuperNinjaWorld */ = {
 			isa = PBXGroup;
 			children = (
-				5DC82B7C1C821609003744F9 /* AppDelegate.swift */,
-				5DC82B821C821609003744F9 /* GameViewController.swift */,
-				5DC82B801C821609003744F9 /* GameScene.swift */,
-				5D4AE89F1CA05C9900654EDE /* SpriteType.swift */,
-				5DC82B841C821609003744F9 /* Main.storyboard */,
-				5D8D2A441CA794B100CD8432 /* Sprites */,
-				5DD11BED1C822ED900F7D5D0 /* Scenes */,
-				5DC82B871C821609003744F9 /* Assets.xcassets */,
-				5DC82B891C821609003744F9 /* LaunchScreen.storyboard */,
-				5DC82B8C1C821609003744F9 /* Info.plist */,
+				5D37A42F1CAE20B500145CC5 /* AppDelegate.swift */,
+				5D37A4331CAE20B500145CC5 /* GameScene.swift */,
+				5D535CB71CB0BB6A002636BB /* DeathScene.swift */,
+				5D37A4351CAE20B500145CC5 /* GameViewController.swift */,
+				5D535CA91CB0969A002636BB /* GameNode.swift */,
+				5D535CB01CB0A9C5002636BB /* MagicNumbers.swift */,
+				5D535CAD1CB09784002636BB /* OptionSetType */,
+				5D37A4601CAE216500145CC5 /* Sprites */,
+				5D37A4671CAE219A00145CC5 /* Storyboards */,
+				5D37A4451CAE215E00145CC5 /* Scenes */,
+				5D37A43A1CAE20B500145CC5 /* Assets.xcassets */,
+				5D37A43F1CAE20B500145CC5 /* Info.plist */,
 			);
-			name = SuperNinjaWorld;
-			path = "Super Link World";
+			path = SuperNinjaWorld;
 			sourceTree = "<group>";
 		};
-		5DD11BED1C822ED900F7D5D0 /* Scenes */ = {
+		5D37A4451CAE215E00145CC5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5DD11BEB1C8229FD00F7D5D0 /* GameScene.sks */,
-				5DD11BEE1C822EFD00F7D5D0 /* Ground.sks */,
-				5DD92D511C86BCE70054C35A /* Player.sks */,
-				5D4AB80E1C99D329009D25D0 /* Enemy.sks */,
-				5D93B6F21C826663009D7992 /* WarpPipe.sks */,
-				5DBF71591C8281A200424548 /* PirahnaPlant.sks */,
-				5DBF71571C82749D00424548 /* EnemyPipe.sks */,
-				5D7802BD1C89741A006913E5 /* StationaryLeft.sks */,
-				5D7802BB1C89740D006913E5 /* StationaryRight.sks */,
-				5DCA51DF1C87EC1E0036549B /* MoveLeft.sks */,
-				5D7802B91C89737F006913E5 /* MoveRight.sks */,
-				5D943E581CA7E7710098FE41 /* JumpLeft.sks */,
-				5D943E561CA7E72B0098FE41 /* JumpRight.sks */,
+				5D37A44F1CAE215E00145CC5 /* Player.sks */,
+				5D37A4461CAE215E00145CC5 /* Enemy.sks */,
+				5D37A4481CAE215E00145CC5 /* GameScene.sks */,
+				5D535CB51CB0BA53002636BB /* DeathScene.sks */,
+				5D37A4491CAE215E00145CC5 /* Ground.sks */,
+				5D37A44E1CAE215E00145CC5 /* Plant.sks */,
+				5D37A4521CAE215E00145CC5 /* WarpPipe.sks */,
+				5D37A4471CAE215E00145CC5 /* EnemyPipe.sks */,
+				5D37A44A1CAE215E00145CC5 /* JumpLeft.sks */,
+				5D37A44B1CAE215E00145CC5 /* JumpRight.sks */,
+				5D37A44C1CAE215E00145CC5 /* MoveLeft.sks */,
+				5D37A44D1CAE215E00145CC5 /* MoveRight.sks */,
+				5D37A4501CAE215E00145CC5 /* StationaryLeft.sks */,
+				5D37A4511CAE215E00145CC5 /* StationaryRight.sks */,
 			);
-			name = Scenes;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5D37A4601CAE216500145CC5 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				5D37A4631CAE216500145CC5 /* Player.swift */,
+				5D37A4621CAE216500145CC5 /* Spike.swift */,
+				5D535CAE1CB0A7CA002636BB /* Plant.swift */,
+				5D37A4611CAE216500145CC5 /* Block.swift */,
+				5D535CA51CB09512002636BB /* Ground.swift */,
+				5D535CA71CB09537002636BB /* Pipe.swift */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		5D37A4671CAE219A00145CC5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5D37A4371CAE20B500145CC5 /* Main.storyboard */,
+				5D37A43C1CAE20B500145CC5 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5D535CAD1CB09784002636BB /* OptionSetType */ = {
+			isa = PBXGroup;
+			children = (
+				5D37A4681CAE225200145CC5 /* OptionSetType.swift */,
+				5D535CAB1CB096C7002636BB /* OptionSetType+Extension.swift */,
+			);
+			name = OptionSetType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DC82B781C821609003744F9 /* SuperNinjaWorld */ = {
+		5D37A42B1CAE20B500145CC5 /* SuperNinjaWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */;
+			buildConfigurationList = 5D37A4421CAE20B500145CC5 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */;
 			buildPhases = (
-				5DC82B751C821609003744F9 /* Sources */,
-				5DC82B761C821609003744F9 /* Frameworks */,
-				5DC82B771C821609003744F9 /* Resources */,
+				5D37A4281CAE20B500145CC5 /* Sources */,
+				5D37A4291CAE20B500145CC5 /* Frameworks */,
+				5D37A42A1CAE20B500145CC5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SuperNinjaWorld;
-			productName = "Super Link World";
-			productReference = 5DC82B791C821609003744F9 /* SuperNinjaWorld.app */;
+			productName = SuperNinjaWorld;
+			productReference = 5D37A42C1CAE20B500145CC5 /* SuperNinjaWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5DC82B711C821609003744F9 /* Project object */ = {
+		5D37A4241CAE20B500145CC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Hector Matos";
 				TargetAttributes = {
-					5DC82B781C821609003744F9 = {
-						CreatedOnToolsVersion = 7.2.1;
+					5D37A42B1CAE20B500145CC5 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
-			buildConfigurationList = 5DC82B741C821609003744F9 /* Build configuration list for PBXProject "SuperNinjaWorld" */;
+			buildConfigurationList = 5D37A4271CAE20B500145CC5 /* Build configuration list for PBXProject "SuperNinjaWorld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,72 +217,80 @@
 				en,
 				Base,
 			);
-			mainGroup = 5DC82B701C821609003744F9;
-			productRefGroup = 5DC82B7A1C821609003744F9 /* Products */;
+			mainGroup = 5D37A4231CAE20B500145CC5;
+			productRefGroup = 5D37A42D1CAE20B500145CC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DC82B781C821609003744F9 /* SuperNinjaWorld */,
+				5D37A42B1CAE20B500145CC5 /* SuperNinjaWorld */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5DC82B771C821609003744F9 /* Resources */ = {
+		5D37A42A1CAE20B500145CC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC82B8B1C821609003744F9 /* LaunchScreen.storyboard in Resources */,
-				5DBF715A1C8281A200424548 /* PirahnaPlant.sks in Resources */,
-				5D7802BC1C89740D006913E5 /* StationaryRight.sks in Resources */,
-				5DCA51E01C87EC1E0036549B /* MoveLeft.sks in Resources */,
-				5D943E591CA7E7710098FE41 /* JumpLeft.sks in Resources */,
-				5DC82B881C821609003744F9 /* Assets.xcassets in Resources */,
-				5D943E571CA7E72B0098FE41 /* JumpRight.sks in Resources */,
-				5D4AB80F1C99D329009D25D0 /* Enemy.sks in Resources */,
-				5D93B6F31C826663009D7992 /* WarpPipe.sks in Resources */,
-				5DD92D521C86BCE70054C35A /* Player.sks in Resources */,
-				5DD11BEC1C8229FD00F7D5D0 /* GameScene.sks in Resources */,
-				5DBF71581C82749D00424548 /* EnemyPipe.sks in Resources */,
-				5DD11BEF1C822EFD00F7D5D0 /* Ground.sks in Resources */,
-				5D7802BA1C89737F006913E5 /* MoveRight.sks in Resources */,
-				5DC82B861C821609003744F9 /* Main.storyboard in Resources */,
-				5D7802BE1C89741A006913E5 /* StationaryLeft.sks in Resources */,
+				5D37A4561CAE215E00145CC5 /* Ground.sks in Resources */,
+				5D37A45A1CAE215E00145CC5 /* MoveRight.sks in Resources */,
+				5D37A45F1CAE215E00145CC5 /* WarpPipe.sks in Resources */,
+				5D37A4581CAE215E00145CC5 /* JumpRight.sks in Resources */,
+				5D37A43E1CAE20B500145CC5 /* LaunchScreen.storyboard in Resources */,
+				5D37A43B1CAE20B500145CC5 /* Assets.xcassets in Resources */,
+				5D37A4571CAE215E00145CC5 /* JumpLeft.sks in Resources */,
+				5D535CB61CB0BA53002636BB /* DeathScene.sks in Resources */,
+				5D37A4531CAE215E00145CC5 /* Enemy.sks in Resources */,
+				5D37A45C1CAE215E00145CC5 /* Player.sks in Resources */,
+				5D37A4551CAE215E00145CC5 /* GameScene.sks in Resources */,
+				5D37A4541CAE215E00145CC5 /* EnemyPipe.sks in Resources */,
+				5D37A45B1CAE215E00145CC5 /* Plant.sks in Resources */,
+				5D37A4591CAE215E00145CC5 /* MoveLeft.sks in Resources */,
+				5D37A4391CAE20B500145CC5 /* Main.storyboard in Resources */,
+				5D37A45E1CAE215E00145CC5 /* StationaryRight.sks in Resources */,
+				5D37A45D1CAE215E00145CC5 /* StationaryLeft.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5DC82B751C821609003744F9 /* Sources */ = {
+		5D37A4281CAE20B500145CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D4AE8A01CA05C9900654EDE /* SpriteType.swift in Sources */,
-				5DC82B811C821609003744F9 /* GameScene.swift in Sources */,
-				5D8D2A4B1CA7950400CD8432 /* Enemy.swift in Sources */,
-				5D1BC67C1CA9A9C600FFD451 /* EmptyGameNodes.swift in Sources */,
-				5DC82B831C821609003744F9 /* GameViewController.swift in Sources */,
-				5D8D2A4E1CA7950400CD8432 /* Player.swift in Sources */,
-				5DC82B7D1C821609003744F9 /* AppDelegate.swift in Sources */,
+				5D37A4341CAE20B500145CC5 /* GameScene.swift in Sources */,
+				5D535CAF1CB0A7CA002636BB /* Plant.swift in Sources */,
+				5D37A4651CAE216500145CC5 /* Spike.swift in Sources */,
+				5D37A4641CAE216500145CC5 /* Block.swift in Sources */,
+				5D535CAA1CB0969A002636BB /* GameNode.swift in Sources */,
+				5D37A4361CAE20B500145CC5 /* GameViewController.swift in Sources */,
+				5D37A4661CAE216500145CC5 /* Player.swift in Sources */,
+				5D37A4301CAE20B500145CC5 /* AppDelegate.swift in Sources */,
+				5D535CA81CB09537002636BB /* Pipe.swift in Sources */,
+				5D535CAC1CB096C7002636BB /* OptionSetType+Extension.swift in Sources */,
+				5D535CA61CB09512002636BB /* Ground.swift in Sources */,
+				5D535CB11CB0A9C5002636BB /* MagicNumbers.swift in Sources */,
+				5D37A4691CAE225200145CC5 /* OptionSetType.swift in Sources */,
+				5D535CB81CB0BB6A002636BB /* DeathScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DC82B841C821609003744F9 /* Main.storyboard */ = {
+		5D37A4371CAE20B500145CC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5DC82B851C821609003744F9 /* Base */,
+				5D37A4381CAE20B500145CC5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5DC82B891C821609003744F9 /* LaunchScreen.storyboard */ = {
+		5D37A43C1CAE20B500145CC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5DC82B8A1C821609003744F9 /* Base */,
+				5D37A43D1CAE20B500145CC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -251,10 +298,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5DC82B8D1C821609003744F9 /* Debug */ = {
+		5D37A4401CAE20B500145CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -287,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -296,10 +344,11 @@
 			};
 			name = Debug;
 		};
-		5DC82B8E1C821609003744F9 /* Release */ = {
+		5D37A4411CAE20B500145CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -326,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,50 +383,50 @@
 			};
 			name = Release;
 		};
-		5DC82B901C821609003744F9 /* Debug */ = {
+		5D37A4431CAE20B500145CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Super Link World/Info.plist";
+				INFOPLIST_FILE = SuperNinjaWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KrakenDev.SuperNinjaWorld;
-				PRODUCT_NAME = SuperNinjaWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		5DC82B911C821609003744F9 /* Release */ = {
+		5D37A4441CAE20B500145CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Super Link World/Info.plist";
+				INFOPLIST_FILE = SuperNinjaWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KrakenDev.SuperNinjaWorld;
-				PRODUCT_NAME = SuperNinjaWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DC82B741C821609003744F9 /* Build configuration list for PBXProject "SuperNinjaWorld" */ = {
+		5D37A4271CAE20B500145CC5 /* Build configuration list for PBXProject "SuperNinjaWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC82B8D1C821609003744F9 /* Debug */,
-				5DC82B8E1C821609003744F9 /* Release */,
+				5D37A4401CAE20B500145CC5 /* Debug */,
+				5D37A4411CAE20B500145CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DC82B8F1C821609003744F9 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */ = {
+		5D37A4421CAE20B500145CC5 /* Build configuration list for PBXNativeTarget "SuperNinjaWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC82B901C821609003744F9 /* Debug */,
-				5DC82B911C821609003744F9 /* Release */,
+				5D37A4431CAE20B500145CC5 /* Debug */,
+				5D37A4441CAE20B500145CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5DC82B711C821609003744F9 /* Project object */;
+	rootObject = 5D37A4241CAE20B500145CC5 /* Project object */;
 }

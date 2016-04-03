@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Super Link World
+//  Super Ninja World
 //
 //  Created by Hector Matos on 2/27/16.
 //  Copyright © 2016 Hector Matos. All rights reserved.

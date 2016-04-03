@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  Super Link World
+//  Super Ninja World
 //
 //  Created by Hector Matos on 2/27/16.
 //  Copyright (c) 2016 Hector Matos. All rights reserved.
@@ -16,7 +16,9 @@ private extension Selector {
 }
 
 class GameViewController: UIViewController {
-    lazy var scene: GameScene = self.setUpSceneAndPresent()
+    var scene: GameScene? {
+        return (view as? SKView)?.scene as? GameScene
+    }
     
     lazy var commands: [UIKeyCommand] = {
         return [
@@ -37,21 +39,22 @@ class GameViewController: UIViewController {
         
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         skView.ignoresSiblingOrder = true
-        skView.presentScene(scene)
+        skView.presentScene(setUpScene())
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
-    func setUpSceneAndPresent() -> GameScene {
-        let scene = GameScene(fileNamed:"GameScene")!
+    func setUpScene() -> GameScene {
+        let scene = GameScene(fileNamed: String(GameScene))!
         scene.scaleMode = .ResizeFill
         
         return scene
     }
 }
 
+// MARK: UIKeyCommand Enabling/Functions
 extension GameViewController {
     override var keyCommands: [UIKeyCommand] { return commands }
     
@@ -60,14 +63,14 @@ extension GameViewController {
     }
     
     func moveLeft() {
-        scene.moveLeft()
+        scene?.moveLeft()
     }
     
     func moveRight() {
-        scene.moveRight()
+        scene?.moveRight()
     }
     
     func jump() {
-        scene.jump()
+        scene?.jump()
     }
 }

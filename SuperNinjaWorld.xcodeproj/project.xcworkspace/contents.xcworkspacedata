@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/hectormatos/Development/Xcode/Super-Ninja-World/SuperNinjaWorld.xcodeproj">
+      location = "self:SuperNinjaWorld.xcodeproj">
    </FileRef>
 </Workspace>
