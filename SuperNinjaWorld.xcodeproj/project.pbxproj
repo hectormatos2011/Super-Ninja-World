@@ -13,7 +13,7 @@
 		5D37A4391CAE20B500145CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4371CAE20B500145CC5 /* Main.storyboard */; };
 		5D37A43B1CAE20B500145CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A43A1CAE20B500145CC5 /* Assets.xcassets */; };
 		5D37A43E1CAE20B500145CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A43C1CAE20B500145CC5 /* LaunchScreen.storyboard */; };
-		5D37A4531CAE215E00145CC5 /* Enemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4461CAE215E00145CC5 /* Enemy.sks */; };
+		5D37A4531CAE215E00145CC5 /* Spike.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4461CAE215E00145CC5 /* Spike.sks */; };
 		5D37A4541CAE215E00145CC5 /* EnemyPipe.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4471CAE215E00145CC5 /* EnemyPipe.sks */; };
 		5D37A4551CAE215E00145CC5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4481CAE215E00145CC5 /* GameScene.sks */; };
 		5D37A4561CAE215E00145CC5 /* Ground.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A4491CAE215E00145CC5 /* Ground.sks */; };
@@ -49,7 +49,7 @@
 		5D37A43A1CAE20B500145CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D37A43D1CAE20B500145CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D37A43F1CAE20B500145CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D37A4461CAE215E00145CC5 /* Enemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Enemy.sks; sourceTree = "<group>"; };
+		5D37A4461CAE215E00145CC5 /* Spike.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spike.sks; sourceTree = "<group>"; };
 		5D37A4471CAE215E00145CC5 /* EnemyPipe.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyPipe.sks; sourceTree = "<group>"; };
 		5D37A4481CAE215E00145CC5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5D37A4491CAE215E00145CC5 /* Ground.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Ground.sks; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				5D37A44F1CAE215E00145CC5 /* Player.sks */,
-				5D37A4461CAE215E00145CC5 /* Enemy.sks */,
+				5D37A4461CAE215E00145CC5 /* Spike.sks */,
 				5D37A4481CAE215E00145CC5 /* GameScene.sks */,
 				5D535CB51CB0BA53002636BB /* DeathScene.sks */,
 				5D37A4491CAE215E00145CC5 /* Ground.sks */,
@@ -240,7 +240,7 @@
 				5D37A43B1CAE20B500145CC5 /* Assets.xcassets in Resources */,
 				5D37A4571CAE215E00145CC5 /* JumpLeft.sks in Resources */,
 				5D535CB61CB0BA53002636BB /* DeathScene.sks in Resources */,
-				5D37A4531CAE215E00145CC5 /* Enemy.sks in Resources */,
+				5D37A4531CAE215E00145CC5 /* Spike.sks in Resources */,
 				5D37A45C1CAE215E00145CC5 /* Player.sks in Resources */,
 				5D37A4551CAE215E00145CC5 /* GameScene.sks in Resources */,
 				5D37A4541CAE215E00145CC5 /* EnemyPipe.sks in Resources */,
