@@ -21,15 +21,6 @@ struct SpriteType: OptionSetType {
     static let Block    = SpriteType(rawValue: 1<<6)
 }
 
-extension SpriteType: OptionSetPrintable {
-    static var allTypes: [SpriteType] = [
-        .Player,  .Spike,  .Plant,  .Scene,  .Ground,  .Pipe,  .Block,  .None
-    ]
-    static var descriptions: [String] = [
-        "Player", "Spike", "Plant", "Scene", "Ground", "Pipe", "Block", "None"
-    ]
-}
-
 struct ActionType: OptionSetType {
     let rawValue: UInt32
     
@@ -42,11 +33,27 @@ struct ActionType: OptionSetType {
     static let Dying            = ActionType(rawValue: 1<<5)
 }
 
-extension ActionType: OptionSetPrintable {
-    static var allTypes: [ActionType] = [
-        .Move,  .Jump,  .Stationary,  .FaceLeft,  .FaceRight,  .Dying,  .None
+extension SpriteType: OptionSetPrintable {
+    static var allTypes: [(element: SpriteType, description: String)] = [
+        (.Player, "Player"),
+        (.Spike, "Spike"),
+        (.Plant, "Plant"),
+        (.Scene, "Scene"),
+        (.Ground, "Ground"),
+        (.Pipe, "Pipe"),
+        (.Block, "Block"),
+        (.None, "None")
     ]
-    static var descriptions: [String] = [
-        "Move", "Jump", "Stationary", "Left", "Right", "Dying", "None"
+}
+
+extension ActionType: OptionSetPrintable {
+    static var allTypes: [(element: ActionType, description: String)] = [
+        (.Move, "Move"),
+        (.Jump, "Jump"),
+        (.Stationary, "Stationary"),
+        (.FaceLeft, "FaceLeft"),
+        (.FaceRight, "FaceRight"),
+        (.Dying, "Dying"),
+        (.None, "None")
     ]
 }

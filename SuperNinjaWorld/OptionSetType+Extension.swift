@@ -10,8 +10,7 @@ import SpriteKit
 
 protocol OptionSetPrintable: CustomStringConvertible, CustomDebugStringConvertible {
     associatedtype Element = Self
-    static var allTypes: [Element] { get }
-    static var descriptions: [String] { get }
+    static var allTypes: [(element: Element, description: String)] { get }
 }
 
 extension OptionSetPrintable where Self: OptionSetType, Self.Element: OptionSetType, Self.Element.RawValue == UInt32 {
@@ -25,10 +24,8 @@ extension OptionSetPrintable where Self: OptionSetType, Self.Element: OptionSetT
     func description(debug debug: Bool) -> String {
         var description = ""
         for type in Self.allTypes {
-            if contains(type) && type.rawValue != 0 {
-                let index = Int(log2(Float(type.rawValue)))
-                let typeDescription = Self.descriptions[index]
-                description += (description.isEmpty || !debug) ? typeDescription : ", \(typeDescription)"
+            if contains(type.element) && type.element.rawValue != 0 {
+                description += (description.isEmpty || !debug) ? type.description : ", \(type.description)"
             }
         }
         return description

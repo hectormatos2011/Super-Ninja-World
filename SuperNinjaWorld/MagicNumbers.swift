@@ -8,9 +8,9 @@
 
 import CoreGraphics
 
-struct Constants {
-    struct Scene {
-        struct Button {
+enum Constants {
+    enum Scene {
+        enum Button {
             static let size: CGFloat = 60.0
             static let margin: CGFloat = 20.0
             static let midMargin: CGFloat = 15.0
@@ -23,12 +23,12 @@ struct Constants {
         static let deathSceneLabel = "GameOverLabel"
         static let deathSceneTransitionDuration = 3.0
     }
-    struct Player {
+    enum Player {
         static let maxSpeed: CGFloat = 300.0
         static let velocityIncrement: CGFloat = 10.0
         static let verticalJumpSpeed: CGFloat = 700.0
     }
-    struct Enemy {
+    enum Enemy {
         static let spikeRotationAngle: Float = -30.0
         static let xPositionIncrement: CGFloat = 2.0
     }
