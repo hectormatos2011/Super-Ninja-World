@@ -121,7 +121,6 @@ extension Player {
         
         var actions = [ActionType : SKAction]()
         for type in typesWithSKSFileActions {
-            print(String(type))
             if let action = SKAction(named: String(type)) {
                 actions[type] = action
             }
