@@ -9,10 +9,24 @@
 import UIKit
 import SpriteKit
 
+private extension Selector {
+    static let moveLeft = #selector(GameViewController.moveLeft)
+    static let moveRight = #selector(GameViewController.moveRight)
+    static let jump = #selector(GameViewController.jump)
+}
+
 class GameViewController: UIViewController {
     var scene: GameScene? {
         return (view as? SKView)?.scene as? GameScene
     }
+    
+    lazy var commands: [UIKeyCommand] = {
+        return [
+            UIKeyCommand(input: UIKeyInputLeftArrow, modifierFlags: UIKeyModifierFlags(), action: .moveLeft),
+            UIKeyCommand(input: UIKeyInputRightArrow, modifierFlags: UIKeyModifierFlags(), action: .moveRight),
+            UIKeyCommand(input: " ", modifierFlags: UIKeyModifierFlags(), action: .jump)
+        ]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,5 +51,26 @@ class GameViewController: UIViewController {
         scene.scaleMode = .ResizeFill
         
         return scene
+    }
+}
+
+// MARK: UIKeyCommand Enabling/Functions
+extension GameViewController {
+    override var keyCommands: [UIKeyCommand] { return commands }
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    func moveLeft() {
+        scene?.moveLeft()
+    }
+    
+    func moveRight() {
+        scene?.moveRight()
+    }
+    
+    func jump() {
+        scene?.jump()
     }
 }
