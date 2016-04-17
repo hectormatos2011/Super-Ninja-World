@@ -110,7 +110,7 @@ extension Player {
 // MARK: Action Loading Functions
 extension Player {
     func loadActions() -> [ActionType : SKAction] {
-        let typesWithSKSFileActions: [ActionType] = [
+        let typesWithSKSActions: [ActionType] = [
             [.FaceLeft, .Stationary],
             [.FaceRight, .Stationary],
             [.FaceLeft, .Jump],
@@ -119,14 +119,13 @@ extension Player {
             [.FaceRight, .Move],
         ]
         
-        var actions = [ActionType : SKAction]()
-        for type in typesWithSKSFileActions {
-            if let action = SKAction(named: String(type)) {
-                actions[type] = action
-            }
+        let loadedActions = typesWithSKSActions.reduce([ActionType : SKAction]()) {
+            var newActions = $0
+            newActions[$1] = SKAction(named: String($1))
+            return newActions
         }
         
-        return actions
+        return loadedActions
     }
 }
 
