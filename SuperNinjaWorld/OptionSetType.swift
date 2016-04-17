@@ -51,8 +51,8 @@ extension ActionType: OptionSetPrintable {
         (.Move, "Move"),
         (.Jump, "Jump"),
         (.Stationary, "Stationary"),
-        (.FaceLeft, "FaceLeft"),
-        (.FaceRight, "FaceRight"),
+        (.FaceLeft, "Left"),
+        (.FaceRight, "Right"),
         (.Dying, "Dying"),
         (.None, "None")
     ]
