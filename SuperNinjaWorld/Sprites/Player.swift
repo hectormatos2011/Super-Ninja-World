@@ -54,3 +54,7 @@ extension Player {
     func stopMoving() {
     }
 }
+
+//MARK: GameNode Protocol Functions
+extension Player: GameNode {
+}

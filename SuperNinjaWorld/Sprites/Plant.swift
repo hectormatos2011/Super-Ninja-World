@@ -14,3 +14,7 @@ class Plant: SKSpriteNode {
     }
 }
 
+//MARK: GameNode Protocol Functions
+extension Plant: GameNode {
+}
+

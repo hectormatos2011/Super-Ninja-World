@@ -14,3 +14,6 @@ class Pipe: SKSpriteNode {
     }
 }
 
+//MARK: GameNode Protocol Functions
+extension Pipe: GameNode {
+}

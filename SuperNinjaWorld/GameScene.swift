@@ -75,6 +75,10 @@ extension GameScene {
     }
 }
 
+//MARK: GameNode Protocol Functions
+extension GameScene: GameNode {
+}
+
 // MARK: DeathDelegate Protocol Functions
 extension GameScene: DeathDelegate {
     func andThatsAllSheWrote() {

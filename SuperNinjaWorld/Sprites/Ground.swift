@@ -14,3 +14,6 @@ class Ground: SKSpriteNode {
     }
 }
 
+//MARK: GameNode Protocol Functions
+extension Ground: GameNode {
+}

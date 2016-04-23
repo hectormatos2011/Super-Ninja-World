@@ -13,3 +13,7 @@ class Block: SKSpriteNode {
         super.init(coder: aDecoder)
     }
 }
+
+//MARK: GameNode Protocol Functions
+extension Block: GameNode {
+}
