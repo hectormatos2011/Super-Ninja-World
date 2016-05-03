@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+// MARK: Hashable Protocol
+extension ActionType: Hashable {
+    var hashValue: Int { return Int(rawValue) }
+}
