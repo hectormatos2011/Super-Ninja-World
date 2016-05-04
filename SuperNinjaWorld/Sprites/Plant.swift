@@ -18,6 +18,7 @@ class Plant: SKSpriteNode {
 //MARK: GameNode Protocol Functions
 extension Plant: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }
 

@@ -18,5 +18,6 @@ class Ground: SKSpriteNode {
 //MARK: GameNode Protocol Functions
 extension Ground: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }

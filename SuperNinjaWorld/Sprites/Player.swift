@@ -132,5 +132,6 @@ extension Player {
 //MARK: GameNode Protocol Functions
 extension Player: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }

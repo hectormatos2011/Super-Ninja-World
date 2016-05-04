@@ -20,6 +20,7 @@ class Spike: SKSpriteNode {
 //MARK: GameNode Protocol Functions
 extension Spike: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
     
     func update(currentTime: CFTimeInterval) {

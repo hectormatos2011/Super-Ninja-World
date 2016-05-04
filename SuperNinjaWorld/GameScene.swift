@@ -79,6 +79,7 @@ extension GameScene {
 // MARK: GameNode Protocol Functions
 extension GameScene: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }
 

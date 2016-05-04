@@ -18,5 +18,6 @@ class Block: SKSpriteNode {
 //MARK: GameNode Protocol Functions
 extension Block: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }

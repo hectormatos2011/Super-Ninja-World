@@ -18,5 +18,6 @@ class Pipe: SKSpriteNode {
 //MARK: GameNode Protocol Functions
 extension Pipe: GameNode {
     func setUpBitMasks() {
+        //REPLACE WITH BITMASK SETUP CODE
     }
 }
