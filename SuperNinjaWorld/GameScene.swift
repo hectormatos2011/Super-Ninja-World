@@ -26,6 +26,7 @@ class GameScene: SKScene {
         
         setUpPhysics(view)
         setUpButtons(view)
+        setUpBitMasks()
     }
     
     override func willMoveFromView(view: SKView) {
@@ -75,8 +76,10 @@ extension GameScene {
     }
 }
 
-//MARK: GameNode Protocol Functions
+// MARK: GameNode Protocol Functions
 extension GameScene: GameNode {
+    func setUpBitMasks() {
+    }
 }
 
 // MARK: DeathDelegate Protocol Functions

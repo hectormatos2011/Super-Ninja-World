@@ -27,6 +27,7 @@ class Player: SKSpriteNode {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setUpBitMasks()
     }
     
     func update(currentTime: CFTimeInterval) {
@@ -130,4 +131,6 @@ extension Player {
 
 //MARK: GameNode Protocol Functions
 extension Player: GameNode {
+    func setUpBitMasks() {
+    }
 }

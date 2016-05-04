@@ -13,11 +13,15 @@ class Spike: SKSpriteNode {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setUpBitMasks()
     }
 }
 
 //MARK: GameNode Protocol Functions
 extension Spike: GameNode {
+    func setUpBitMasks() {
+    }
+    
     func update(currentTime: CFTimeInterval) {
         position.x += Constants.Enemy.xPositionIncrement * multiplier
     }

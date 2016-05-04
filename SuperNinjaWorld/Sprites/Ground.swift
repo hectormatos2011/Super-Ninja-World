@@ -11,9 +11,12 @@ import SpriteKit
 class Ground: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setUpBitMasks()
     }
 }
 
 //MARK: GameNode Protocol Functions
 extension Ground: GameNode {
+    func setUpBitMasks() {
+    }
 }
