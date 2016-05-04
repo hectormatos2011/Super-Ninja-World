@@ -135,19 +135,4 @@ extension Player: GameNode {
         //REPLACE WITH BITMASK SETUP CODE
     }
     
-//    func collidedWith(node: GameNode) {
-//        guard let sprite = node.node as? SKSpriteNode else { return }
-//        
-//        if (node.categorySetType == .Spike || node.categorySetType == .Plant) && action != .Dying {
-//            action = .Dying
-//            collisionSetType = .None
-//            physicsBody?.velocity = CGVector(dx: 0.0, dy: Constants.Player.maxSpeed)
-//            
-//            delegate?.andThatsAllSheWrote()
-//        } else if action.contains(.Jump) {
-//            if frame.maxY > sprite.position.y {
-//                action.remove(.Jump)
-//            }
-//        }
-//    }
 }
