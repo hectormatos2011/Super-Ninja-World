@@ -50,57 +50,52 @@ class Player: SKSpriteNode {
 // MARK: Key Commands!
 extension Player {
     func moveLeft() {
-        guard action != .Dying && !action.contains([.Move, .FaceLeft]) else { return }
-        
         let newAction: ActionType = [.Move, .FaceLeft]
+        
+        guard action != .Dying && !action.contains([.Move, .FaceLeft]) else { return }
+        guard let moveLeftAction = actions[newAction] else { return }
+        
         removeAllActions()
-        runAction(actions[newAction]!)
+        runAction(moveLeftAction)
         
         action.remove([.Stationary, .FaceRight])
         action.insert(newAction)
     }
     
     func moveRight() {
-        guard action != .Dying && !action.contains([.Move, .FaceRight]) else { return }
-        
         let newAction: ActionType = [.Move, .FaceRight]
+        
+        guard action != .Dying && !action.contains([.Move, .FaceRight]) else { return }
+        guard let moveRightAction = actions[newAction] else { return }
+        
         removeAllActions()
-        runAction(actions[newAction]!)
+        runAction(moveRightAction)
         
         action.remove([.Stationary, .FaceLeft])
         action.insert(newAction)
     }
     
     func jump() {
+        let newAction: ActionType = action.contains(.FaceLeft) ? [.FaceLeft, .Jump] : [.FaceRight, .Jump]
+        
         guard !action.contains(.Dying) && !action.contains(.Jump) else { return }
+        guard let jumpAction = actions[newAction] else { return }
         
         removeAllActions()
-
-        if action.contains(.FaceLeft) {
-            let newAction: ActionType = [.FaceLeft, .Jump]
-            runAction(actions[newAction]!)
-            action.insert(newAction)
-        } else {
-            let newAction: ActionType = [.FaceRight, .Jump]
-            runAction(actions[newAction]!)
-            action.insert(newAction)
-        }
+        runAction(jumpAction)
+        action.insert(newAction)
         
         physicsBody?.velocity.dy = Constants.Player.verticalJumpSpeed
     }
     
     func stopMoving() {
-        guard action != .Dying && !action.contains([.Stationary]) else { return }
+        let newAction: ActionType = action.contains(.FaceLeft) ? [.FaceLeft, .Stationary] : [.FaceRight, .Stationary]
         
-        let newAction: ActionType
-        if action.contains(.FaceLeft) {
-            newAction = [.Stationary, .FaceLeft]
-        } else {
-            newAction = [.Stationary, .FaceRight]
-        }
+        guard action != .Dying && !action.contains([.Stationary]) else { return }
+        guard let stopAction = actions[newAction] else { return }
         
         removeAllActions()
-        runAction(actions[newAction]!)
+        runAction(stopAction)
         
         action.remove([.Move])
         action.insert(newAction)
