@@ -100,6 +100,14 @@ extension Player {
         action.remove([.Move])
         action.insert(newAction)
     }
+    
+    func hopPlayerBeforeDeath() {
+        physicsBody?.velocity = CGVector(dx: 0.0, dy: Constants.Player.maxSpeed)
+    }
+
+    func spriteIsAbove(sprite sprite: SKSpriteNode) -> Bool {
+        return frame.maxY > sprite.position.y
+    }
 }
 
 // MARK: Action Loading Functions
@@ -138,11 +146,11 @@ extension Player: GameNode {
         if (node.categorySetType == .Spike || node.categorySetType == .Plant) && action != .Dying {
             action = .Dying
             collisionSetType = .None
-            physicsBody?.velocity = CGVector(dx: 0.0, dy: Constants.Player.maxSpeed)
             
+            hopPlayerBeforeDeath()
             delegate?.andThatsAllSheWrote()
         } else if action.contains(.Jump) {
-            if frame.maxY > sprite.position.y {
+            if spriteIsAbove(sprite: sprite) {
                 action.remove(.Jump)
             }
         }
