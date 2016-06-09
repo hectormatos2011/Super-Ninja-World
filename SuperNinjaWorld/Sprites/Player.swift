@@ -64,7 +64,7 @@ extension Player {
     
     func moveRight() {
         let newAction: ActionType = [.Move, .FaceRight]
-
+        
         guard action != .Dying && !action.contains([.Move, .FaceRight]) else { return }
         guard let moveRightAction = actions[newAction] else { return }
         
@@ -100,6 +100,14 @@ extension Player {
         action.remove([.Move])
         action.insert(newAction)
     }
+    
+    func hopPlayerBeforeDeath() {
+        physicsBody?.velocity = CGVector(dx: 0.0, dy: Constants.Player.maxSpeed)
+    }
+
+    func spriteIsAbove(sprite sprite: SKSpriteNode) -> Bool {
+        return frame.maxY > sprite.position.y
+    }
 }
 
 // MARK: Action Loading Functions
@@ -128,5 +136,8 @@ extension Player {
 extension Player: GameNode {
     func setUpBitMasks() {
         //REPLACE WITH BITMASK SETUP CODE
+    }
+
+    func collidedWith(node: GameNode) {
     }
 }
