@@ -17,7 +17,7 @@ class Spike: SKSpriteNode {
     }
     
     func reverseSpikeDirection() {
-        let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(Constants.Enemy.spikeRotationAngle * Float(multiplier))), duration: 0.1))
+        let rotateAction = SKAction.repeatActionForever(SKAction.rotateByAngle(CGFloat(GLKMathDegreesToRadians(Constants.Enemy.spikeRotationAngle * Float(directionMultiplier))), duration: 0.1))
         removeAllActions()
         runAction(rotateAction)
     }
@@ -30,7 +30,7 @@ extension Spike: GameNode {
     }
     
     func update(currentTime: CFTimeInterval) {
-        position.x += Constants.Enemy.xPositionIncrement * multiplier
+        position.x += Constants.Enemy.xPositionIncrement * directionMultiplier
     }
     
     func collidedWith(node: GameNode) {
